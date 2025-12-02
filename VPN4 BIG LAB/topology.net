@@ -1,0 +1,644 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = c:\users\user\appdata\local\temp\GNS3_mfkgzq\working
+    udp = 10201
+    [[7200]]
+        image = C:\Users\user\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R10]]
+        console = 2110
+        aux = 2510
+        cnfg = configs\R10.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = A2 f1/1
+        f1/1 = C2 f1/1
+        slot2 = PA-2FE-TX
+        f2/0 = B2 f1/1
+        f2/1 = R13 f1/0
+        x = 375.213203436
+        y = -25.0710678119
+        z = 1.0
+    [[ROUTER A2]]
+        console = 2109
+        aux = 2509
+        cnfg = configs\A2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R8 f1/1
+        f1/1 = R10 f1/0
+        x = 81.306565824
+        y = -180.928932188
+        z = 1.0
+    [[ROUTER C2]]
+        console = 2111
+        aux = 2511
+        cnfg = configs\C2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R8 f2/0
+        f1/1 = R10 f1/1
+        x = 111.249783362
+        y = 177.404112295
+        z = 1.0
+    [[ROUTER B2]]
+        console = 2112
+        aux = 2512
+        cnfg = configs\B2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R8 f2/1
+        f1/1 = R10 f2/0
+        x = 94.2792206136
+        y = -17.7573593129
+        z = 1.0
+[127.0.0.1:7203]
+    workingdir = c:\users\user\appdata\local\temp\GNS3_mfkgzq\working
+    udp = 10301
+    [[7200]]
+        image = C:\Users\user\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R14]]
+        console = 2114
+        aux = 2514
+        cnfg = configs\R14.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R13 f1/1
+        f1/1 = R15 f1/0
+        x = 723.60425587
+        y = -344.440692221
+        z = 1.0
+    [[ROUTER R15]]
+        console = 2115
+        aux = 2515
+        cnfg = configs\R15.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R14 f1/1
+        f1/1 = C3 f1/0
+        slot2 = PA-2FE-TX
+        f2/0 = B3 f1/0
+        f2/1 = A3 f1/0
+        x = 746.231672868
+        y = -31.8994949366
+        z = 1.0
+    [[ROUTER R13]]
+        console = 2113
+        aux = 2513
+        cnfg = configs\R13.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R10 f2/1
+        f1/1 = R14 f1/0
+        x = 367.222438152
+        y = -347.269119346
+        z = 1.0
+    [[ROUTER C3]]
+        console = 2116
+        aux = 2516
+        cnfg = configs\C3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f1/1
+        x = 428.033621334
+        y = 286.298556597
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = c:\users\user\appdata\local\temp\GNS3_mfkgzq\working
+    udp = 10001
+    [[7200]]
+        image = C:\Users\user\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER A1]]
+        console = 2101
+        aux = 2501
+        cnfg = configs\A1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R4 f1/0
+        x = -1049.76659403
+        y = -299.017243943
+        z = 1.0
+    [[ROUTER C1]]
+        console = 2103
+        aux = 2503
+        cnfg = configs\C1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R4 f2/0
+        x = -1050.76659403
+        y = 27.9827560573
+        z = 1.0
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        cnfg = configs\R4.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = A1 f1/0
+        f1/1 = B1 f1/0
+        slot2 = PA-2FE-TX
+        f2/0 = C1 f1/0
+        f2/1 = R5 f1/0
+        x = -644.114790413
+        y = -7.02943725152
+        z = 1.0
+    [[ROUTER B1]]
+        console = 2102
+        aux = 2502
+        cnfg = configs\B1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R4 f1/1
+        x = -1049.76659403
+        y = -131.017243943
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = c:\users\user\appdata\local\temp\GNS3_mfkgzq\working
+    udp = 10101
+    [[7200]]
+        image = C:\Users\user\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R5]]
+        console = 2105
+        aux = 2505
+        cnfg = configs\R5.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R4 f2/1
+        f1/1 = R6 f1/0
+        x = -639.457936164
+        y = -293.066017178
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2106
+        aux = 2506
+        cnfg = configs\R6.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R5 f1/1
+        f1/1 = R7 f1/0
+        x = -422.27416998
+        y = -479.107647738
+        z = 1.0
+    [[ROUTER R7]]
+        console = 2107
+        aux = 2507
+        cnfg = configs\R7.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R6 f1/1
+        f1/1 = R8 f1/0
+        x = -203.747258045
+        y = -304.965512115
+        z = 1.0
+    [[ROUTER R8]]
+        console = 2108
+        aux = 2508
+        cnfg = configs\R8.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R7 f1/1
+        f1/1 = A2 f1/0
+        slot2 = PA-2FE-TX
+        f2/0 = C2 f1/0
+        f2/1 = B2 f1/0
+        x = -201.404112295
+        y = -22.9289321881
+        z = 1.0
+[127.0.0.1:7204]
+    workingdir = c:\users\user\appdata\local\temp\GNS3_mfkgzq\working
+    udp = 10401
+    [[7200]]
+        image = C:\Users\user\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER A3]]
+        console = 2118
+        aux = 2518
+        cnfg = configs\A3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f2/1
+        x = 835.327127297
+        y = 289.126983722
+        z = 1.0
+    [[ROUTER B3]]
+        console = 2117
+        aux = 2517
+        cnfg = configs\B3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f2/0
+        x = 644.408296377
+        y = 284.884343035
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "ASN 102"
+        x = 579.827560573
+        y = -419.769119346
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 2]]
+        text = "ASN 101"
+        x = -424.264068712
+        y = -545.43311627
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 3]]
+        text = "EIGRP 200"
+        x = 478.004184082
+        y = 118.644227665
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 4]]
+        text = "EIGRP 100"
+        x = 642.052957317
+        y = 162.685858225
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 5]]
+        text = "RIP"
+        x = 865.498700172
+        y = 153.188383542
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 6]]
+        text = "EIGRP 200"
+        x = 62.2253967444
+        y = 113.188383542
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 7]]
+        text = "EIGRP 100"
+        x = 43.8406204336
+        y = -74.7010101268
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 8]]
+        text = "RIP"
+        x = 18.3847763108
+        y = -172.080735804
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 9]]
+        text = "RIP"
+        x = 550.129075763
+        y = -199.151803616
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 10]]
+        text = "RIP"
+        x = -415.778787338
+        y = -214.507142675
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 11]]
+        text = "EIGRP 200"
+        x = -926.309883354
+        y = -1.16190488338
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 12]]
+        text = "EIGRP 100"
+        x = -944.694659665
+        y = -98.5416305603
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 13]]
+        text = "RIP"
+        x = -838.628642487
+        y = -173.293939239
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 14]]
+        text = "17.0.0.0/8\n18.0.0.0/8"
+        x = 818.829652614
+        y = 331.78845533
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 15]]
+        text = "15.0.0.0/8\n16.0.0.0/8"
+        x = 610.940258945
+        y = 326.332611207
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 16]]
+        text = "13.0.0.0/8\n14.0.0.0/8"
+        x = 404.465078839
+        y = 332.190475583
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 17]]
+        text = "11.0.0.0/8\n12.0.0.0/8"
+        x = 82.0243866176
+        y = 222.082827845
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 18]]
+        text = "9.0.0.0/8\n10.0.0.0/8"
+        x = 76.3675323681
+        y = 20.0512985522
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 19]]
+        text = "7.0.0.0/8\n8.0.0.0/8"
+        x = 59.3969696197
+        y = -269.661471607
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 20]]
+        text = "118.0.0.0/8"
+        x = 752.361615182
+        y = 212.197618258
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 21]]
+        text = "117.0.0.0/8"
+        x = 651.952452254
+        y = 114.817892581
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 22]]
+        text = "116.0.0.0/8"
+        x = 479.418397644
+        y = 194.214862201
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 23]]
+        text = "115.0.0.0/8"
+        x = 671.751442127
+        y = -191.6644302
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 24]]
+        text = "114.0.0.0/8"
+        x = 502.045814642
+        y = -356.926406871
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 25]]
+        text = "113.0.0.0/8"
+        x = 318.198051534
+        y = -196.919264196
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 26]]
+        text = "112.0.0.0/8"
+        x = 151.320851174
+        y = -113.279653889
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 27]]
+        text = "111.0.0.0/8"
+        x = 181.019335984
+        y = -35.2968978322
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 28]]
+        text = "110.0.0.0/8"
+        x = 185.261976671
+        y = 87.9406922211
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 29]]
+        text = "109.0.0.0/8"
+        x = -89.0954544295
+        y = 85.3132752231
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 30]]
+        text = "108.0.0.0/8"
+        x = -104.651803616
+        y = -30.4512267647
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 31]]
+        text = "107.0.0.0/8"
+        x = -101.823376491
+        y = -106.617749006
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 32]]
+        text = "106.0.0.0/8"
+        x = -241.830519166
+        y = -188.441125497
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 33]]
+        text = "105.0.0.0/8"
+        x = -347.896536344
+        y = -389.058441227
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 34]]
+        text = "104.0.0.0/8"
+        x = -567.099638512
+        y = -384.614790413
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 35]]
+        text = "103.0.0.0/8"
+        x = -701.449926937
+        y = -149.654328933
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 36]]
+        text = "102.0.0.0/8"
+        x = -906.510893481
+        y = 35.8086578651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 37]]
+        text = "101.0.0.0/8"
+        x = -940.452018978
+        y = -71.4705627485
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 38]]
+        text = "100.0.0.0/8"
+        x = -920.653029105
+        y = -212.690908859
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 39]]
+        text = "5.0.0.0/8\n6.0.0.0/8"
+        x = -1172.38304321
+        y = 24.6959594929
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 40]]
+        text = "3.0.0.0/8\n4.0.0.0/8"
+        x = -1173.79725677
+        y = -140.566017178
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 41]]
+        text = "1.0.0.0/8\n2.0.0.0/8"
+        x = -1185.11096527
+        y = -311.484848098
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+    [[NOTE 42]]
+        text = "f1/0"
+        x = 22.3030029881
+        y = -16.5431479634
+        interface = A3 f1/0
+    [[NOTE 43]]
+        text = "f1/0"
+        x = 45.2403672165
+        y = -16.0811424514
+        interface = B3 f1/0
+    [[NOTE 44]]
+        text = "f1/0"
+        x = 61.2842712475
+        y = -6.28427124746
+        interface = C3 f1/0
+    [[NOTE 45]]
+        text = "f2/1"
+        x = 43.6969970119
+        y = 60.5431479634
+        interface = R15 f2/1
+    [[NOTE 46]]
+        text = "f1/1"
+        x = -42.3068721964
+        y = 23.0606601718
+        interface = R15 f1/1
+    [[NOTE 47]]
+        text = "f2/0"
+        x = -12.4743859323
+        y = 60.0811424514
+        interface = R15 f2/0
+    [[NOTE 48]]
+        text = "f1/0"
+        x = 51.3248356275
+        y = -32.037715973
+        interface = R15 f1/0
+    [[NOTE 49]]
+        text = "f1/1"
+        x = 35.8883678081
+        y = 61.8955803493
+        interface = R14 f1/1
+    [[NOTE 50]]
+        text = "f1/0"
+        x = -44.9987402963
+        y = 21.6825496802
+        interface = R14 f1/0
+    [[NOTE 51]]
+        text = "f1/1"
+        x = 72.9987402963
+        y = 22.3174503198
+        interface = R13 f1/1
+    [[NOTE 52]]
+        text = "f1/0"
+        x = 33.9917265363
+        y = 61.9877040911
+        interface = R13 f1/0
+    [[NOTE 53]]
+        text = "f1/1"
+        x = 72.9864519731
+        y = 20.9590107587
+        interface = B2 f1/1
+    [[NOTE 54]]
+        text = "f1/0"
+        x = -39.520795167
+        y = 24.1289244518
+        interface = B2 f1/0
+    [[NOTE 55]]
+        text = "f1/1"
+        x = 64.7382605492
+        y = -2.3450778868
+        interface = C2 f1/1
+    [[NOTE 56]]
+        text = "f1/0"
+        x = -54.4194950787
+        y = -0.994282664429
+        interface = C2 f1/0
+    [[NOTE 57]]
+        text = "f1/1"
+        x = 1.26173945085
+        y = 46.3450778868
+        interface = R10 f1/1
+    [[NOTE 58]]
+        text = "f2/0"
+        x = -52.9864519731
+        y = 11.0409892413
+        interface = R10 f2/0
+    [[NOTE 59]]
+        text = "f1/0"
+        x = -33.3385694909
+        y = -30.7399441391
+        interface = R10 f1/0
+    [[NOTE 60]]
+        text = "f2/1"
+        x = 48.9788362122
+        y = -36.3724804019
+        interface = R10 f2/1
+    [[NOTE 61]]
+        text = "f1/0"
+        x = -1.91697026981
+        y = 41.5142303762
+        interface = A2 f1/0
+    [[NOTE 62]]
+        text = "f1/1"
+        x = 68.3385694909
+        y = 40.7399441391
+        interface = A2 f1/1
+    [[NOTE 63]]
+        text = "f1/1"
+        x = 48.4169702698
+        y = -30.5142303762
+        interface = R8 f1/1
+    [[NOTE 64]]
+        text = "f2/0"
+        x = 66.6793797085
+        y = 43.5800691021
+        interface = R8 f2/0
+    [[NOTE 65]]
+        text = "f2/1"
+        x = 78.9938832324
+        y = 14.6995026729
+        interface = R8 f2/1
+    [[NOTE 66]]
+        text = "f1/0"
+        x = -17.3323065243
+        y = -43.9986196309
+        interface = R8 f1/0
+    [[NOTE 67]]
+        text = "f1/1"
+        x = 33.3323065243
+        y = 61.9986196309
+        interface = R7 f1/1
+    [[NOTE 68]]
+        text = "f1/0"
+        x = -59.0933208607
+        y = -9.99952268279
+        interface = R7 f1/0
+    [[NOTE 69]]
+        text = "f1/1"
+        x = 64.2821376787
+        y = 46.9284548709
+        interface = R6 f1/1
+    [[NOTE 70]]
+        text = "f1/0"
+        x = 2.62172818289
+        y = 48.0223096862
+        interface = R6 f1/0
+    [[NOTE 71]]
+        text = "f1/1"
+        x = 63.3782718171
+        y = -4.02230968622
+        interface = R5 f1/1
+    [[NOTE 72]]
+        text = "f1/0"
+        x = 32.3488612955
+        y = 61.9946998787
+        interface = R5 f1/0
+    [[NOTE 73]]
+        text = "f2/0"
+        x = -56.8525594895
+        y = 28.4312537269
+        interface = R4 f2/0
+    [[NOTE 74]]
+        text = "f1/0"
+        x = -45.9644659163
+        y = -31.3678936314
+        interface = R4 f1/0
+    [[NOTE 75]]
+        text = "f1/1"
+        x = -61.7530442806
+        y = -8.6920743784
+        interface = R4 f1/1
+    [[NOTE 76]]
+        text = "f2/1"
+        x = 42.6511387045
+        y = -34.4946998787
+        interface = R4 f2/1
+    [[NOTE 77]]
+        text = "f1/0"
+        x = 72.8525594895
+        y = 18.5687462731
+        interface = C1 f1/0
+    [[NOTE 78]]
+        text = "f1/0"
+        x = 71.2530442806
+        y = 33.6920743784
+        interface = B1 f1/0
+    [[NOTE 79]]
+        text = "f1/0"
+        x = 65.4644659163
+        y = 45.3678936314
+        interface = A1 f1/0
+    [[SHAPE 1]]
+        type = rectangle
+        x = 367.79603128
+        y = -374.352380466
+        width = 524.67323164
+        height = 405.678282274
+    [[SHAPE 2]]
+        type = rectangle
+        x = -644.881384442
+        y = -500.63160108
+        width = 524.67323164
+        height = 545.886435076
