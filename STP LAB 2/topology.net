@@ -1,0 +1,81 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7200]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10001
+    [[3725]]
+        image = C:\Users\user\Desktop\GNS3\c3725-adventerprisek9-mz124-15.image
+        ram = 128
+        idlepc = 0x60264fa0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER SW1]]
+        model = 3725
+        console = 2101
+        aux = 2501
+        cnfg = configs\SW1.cfg
+        slot1 = NM-16ESW
+        f1/0 = SW2 f1/0
+        f1/1 = SW2 f1/1
+        f1/2 = SW2 f1/2
+        f1/3 = SW2 f1/3
+        symbol = EtherSwitch router
+        x = -158.5
+        y = -215.5
+        z = 1.0
+    [[ROUTER SW2]]
+        model = 3725
+        console = 2102
+        aux = 2502
+        cnfg = configs\SW2.cfg
+        slot1 = NM-16ESW
+        f1/0 = SW1 f1/0
+        f1/1 = SW1 f1/1
+        f1/2 = SW1 f1/2
+        f1/3 = SW1 f1/3
+        symbol = EtherSwitch router
+        x = -152.5
+        y = 110.5
+        z = 1.0
+[GNS3-DATA]
+    configs = C:\Program Files\GNS3\configs
+    [[NOTE 1]]
+        text = "f1/3"
+        x = 88.5023504363
+        y = -24.1018660256
+        interface = SW2 f1/3
+    [[NOTE 2]]
+        text = "f1/2"
+        x = 45.5741724889
+        y = -24.1793925434
+        interface = SW2 f1/2
+    [[NOTE 3]]
+        text = "f1/1"
+        x = -43.7760235408
+        y = -23.6563036774
+        interface = SW2 f1/1
+    [[NOTE 4]]
+        text = "f1/0"
+        x = -86.9589430884
+        y = -24.271401501
+        interface = SW2 f1/0
+    [[NOTE 5]]
+        text = "f1/3"
+        x = 77.6001250873
+        y = 61.1878886492
+        interface = SW1 f1/3
+    [[NOTE 6]]
+        text = "f1/2"
+        x = 34.3183937493
+        y = 61.463915522
+        interface = SW1 f1/2
+    [[NOTE 7]]
+        text = "f1/1"
+        x = -43.0109870002
+        y = 60.9263442162
+        interface = SW1 f1/1
+    [[NOTE 8]]
+        text = "f1/0"
+        x = -88.3152268913
+        y = 59.957693002
+        interface = SW1 f1/0
