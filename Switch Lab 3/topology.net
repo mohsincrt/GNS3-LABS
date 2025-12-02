@@ -1,0 +1,858 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10201
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R12]]
+        model = 3745
+        console = 2112
+        aux = 2512
+        cnfg = configs\R12.cfg
+        f0/0 = R4 f1/0
+        symbol = computer
+        x = -652.102597104
+        y = -74.3603896932
+        z = 1.0
+    [[ROUTER R10]]
+        model = 3745
+        console = 2110
+        aux = 2510
+        cnfg = configs\R10.cfg
+        f0/0 = R3 f1/0
+        symbol = computer
+        x = 427.333044483
+        y = 420.646752982
+        z = 1.0
+    [[ROUTER R11]]
+        model = 3745
+        console = 2111
+        aux = 2511
+        cnfg = configs\R11.cfg
+        f0/0 = R3 f1/1
+        symbol = computer
+        x = 566.931024229
+        y = 423.475180106
+        z = 1.0
+    [[ROUTER R9]]
+        model = 3745
+        console = 2109
+        aux = 2509
+        cnfg = configs\R9.cfg
+        f0/0 = R4 f1/5
+        symbol = computer
+        x = 379.629509039
+        y = -59.6324676319
+        z = 1.0
+[127.0.0.1:7203]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10301
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R16]]
+        model = 3745
+        console = 2116
+        aux = 2516
+        cnfg = configs\R16.cfg
+        f0/0 = R3 f1/2
+        symbol = computer
+        x = 702.943217538
+        y = 429.303607231
+        z = 1.0
+    [[ROUTER R14]]
+        model = 3745
+        console = 2114
+        aux = 2514
+        cnfg = configs\R14.cfg
+        f0/0 = R4 f1/2
+        symbol = computer
+        x = -300.781745931
+        y = -37.5908370715
+        z = 1.0
+    [[ROUTER R15]]
+        model = 3745
+        console = 2115
+        aux = 2515
+        cnfg = configs\R15.cfg
+        f0/0 = R2 f1/0
+        symbol = computer
+        x = -377.142135624
+        y = 427.859956417
+        z = 1.0
+    [[ROUTER R13]]
+        model = 3745
+        console = 2113
+        aux = 2513
+        cnfg = configs\R13.cfg
+        f0/0 = R4 f1/1
+        symbol = computer
+        x = -460.17871555
+        y = -53.1471862576
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10001
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R4]]
+        model = 3745
+        console = 2104
+        aux = 2504
+        cnfg = configs\R4.cfg
+        slot1 = NM-16ESW
+        f1/0 = R12 f0/0
+        f1/1 = R13 f0/0
+        f1/2 = R14 f0/0
+        f1/3 = R7 f0/0
+        f1/4 = R8 f0/0
+        f1/5 = R9 f0/0
+        f1/6 = R5 f0/0
+        f1/7 = R6 f0/0
+        f1/8 = R5 f0/1
+        f1/9 = R5 f1/0
+        f1/10 = R5 f2/0
+        f1/11 = R6 f0/1
+        f1/12 = R6 f1/0
+        f1/13 = R1 f1/6
+        f1/14 = R2 f1/6
+        f1/15 = R3 f1/6
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        slot4 = NM-1FE-TX
+        symbol = EtherSwitch router
+        x = -143.701010127
+        y = -206.701010127
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3745
+        console = 2101
+        aux = 2501
+        cnfg = configs\R1.cfg
+        slot1 = NM-16ESW
+        f1/0 = R20 f0/0
+        f1/1 = R21 f0/0
+        f1/2 = R22 f0/0
+        f1/3 = R23 f0/0
+        f1/4 = R24 f0/0
+        f1/5 = R29 f0/0
+        f1/6 = R4 f1/13
+        symbol = EtherSwitch router
+        x = -824.850288425
+        y = 197.080735804
+        z = 1.0
+    [[ROUTER R2]]
+        model = 3745
+        console = 2102
+        aux = 2502
+        cnfg = configs\R2.cfg
+        slot1 = NM-16ESW
+        f1/0 = R15 f0/0
+        f1/1 = R25 f0/0
+        f1/2 = R26 f0/0
+        f1/3 = R27 f0/0
+        f1/4 = R28 f0/0
+        f1/5 = R30 f0/0
+        f1/6 = R4 f1/14
+        symbol = EtherSwitch router
+        x = -132.671572875
+        y = 183.838095117
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3745
+        console = 2103
+        aux = 2503
+        cnfg = configs\R3.cfg
+        slot1 = NM-16ESW
+        f1/0 = R10 f0/0
+        f1/1 = R11 f0/0
+        f1/2 = R16 f0/0
+        f1/3 = R17 f0/0
+        f1/4 = R18 f0/0
+        f1/5 = R19 f0/0
+        f1/6 = R4 f1/15
+        symbol = EtherSwitch router
+        x = 727.087878479
+        y = 163.624891681
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10101
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R5]]
+        model = 3745
+        console = 2105
+        aux = 2505
+        cnfg = configs\R5.cfg
+        f0/0 = R4 f1/6
+        f0/1 = R4 f1/8
+        slot1 = NM-1FE-TX
+        f1/0 = R4 f1/9
+        slot2 = NM-1FE-TX
+        f2/0 = R4 f1/10
+        slot3 = NM-1FE-TX
+        x = -347.313708499
+        y = -485.083261121
+        z = 1.0
+    [[ROUTER R6]]
+        model = 3745
+        console = 2106
+        aux = 2506
+        cnfg = configs\R6.cfg
+        f0/0 = R4 f1/7
+        f0/1 = R4 f1/11
+        slot1 = NM-1FE-TX
+        f1/0 = R4 f1/12
+        slot2 = NM-1FE-TX
+        slot3 = NM-1FE-TX
+        slot4 = NM-1FE-TX
+        x = 104.69848481
+        y = -463.012193309
+        z = 1.0
+    [[ROUTER R7]]
+        model = 3745
+        console = 2107
+        aux = 2507
+        cnfg = configs\R7.cfg
+        f0/0 = R4 f1/3
+        symbol = computer
+        x = -86.2426406871
+        y = -27.1055556973
+        z = 1.0
+    [[ROUTER R8]]
+        model = 3745
+        console = 2108
+        aux = 2508
+        cnfg = configs\R8.cfg
+        f0/0 = R4 f1/4
+        symbol = computer
+        x = 118.409162928
+        y = -31.3481963844
+        z = 1.0
+[127.0.0.1:7206]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10601
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R28]]
+        model = 3745
+        console = 2128
+        aux = 2528
+        cnfg = configs\R28.cfg
+        f0/0 = R2 f1/4
+        symbol = computer
+        x = 81.5979797464
+        y = 429.102597104
+        z = 1.0
+    [[ROUTER R27]]
+        model = 3745
+        console = 2127
+        aux = 2527
+        cnfg = configs\R27.cfg
+        f0/0 = R2 f1/3
+        symbol = computer
+        x = -31.1299423149
+        y = 426.27416998
+        z = 1.0
+    [[ROUTER R26]]
+        model = 3745
+        console = 2126
+        aux = 2526
+        cnfg = configs\R26.cfg
+        f0/0 = R2 f1/2
+        symbol = computer
+        x = -142.443650814
+        y = 426.27416998
+        z = 1.0
+    [[ROUTER R25]]
+        model = 3745
+        console = 2125
+        aux = 2525
+        cnfg = configs\R25.cfg
+        f0/0 = R2 f1/1
+        symbol = computer
+        x = -246.686291501
+        y = 424.859956417
+        z = 1.0
+[127.0.0.1:7207]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10701
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R30]]
+        model = 3745
+        console = 2130
+        aux = 2530
+        cnfg = configs\R30.cfg
+        f0/0 = R2 f1/5
+        symbol = computer
+        x = 208.830519166
+        y = 424.89148571
+        z = 1.0
+    [[ROUTER R29]]
+        model = 3745
+        console = 2129
+        aux = 2529
+        cnfg = configs\R29.cfg
+        f0/0 = R1 f1/5
+        symbol = computer
+        x = -573.229580827
+        y = 410.749350086
+        z = 1.0
+[127.0.0.1:7204]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10401
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R17]]
+        model = 3745
+        console = 2117
+        aux = 2517
+        cnfg = configs\R17.cfg
+        f0/0 = R3 f1/3
+        symbol = computer
+        x = 822.742207411
+        y = 426.475180106
+        z = 1.0
+    [[ROUTER R18]]
+        model = 3745
+        console = 2118
+        aux = 2518
+        cnfg = configs\R18.cfg
+        f0/0 = R3 f1/4
+        symbol = computer
+        x = 946.783837972
+        y = 423.646752982
+        z = 1.0
+    [[ROUTER R19]]
+        model = 3745
+        console = 2119
+        aux = 2519
+        cnfg = configs\R19.cfg
+        f0/0 = R3 f1/5
+        symbol = computer
+        x = 1066.9259736
+        y = 423.060966544
+        z = 1.0
+    [[ROUTER R20]]
+        model = 3745
+        console = 2120
+        aux = 2520
+        cnfg = configs\R20.cfg
+        f0/0 = R1 f1/0
+        symbol = computer
+        x = -1222.34018716
+        y = 406.546247918
+        z = 1.0
+[127.0.0.1:7205]
+    workingdir = C:\Users\user\AppData\Local\Temp
+    udp = 10501
+    [[3745]]
+        image = C:\Users\user\Desktop\GNS3\c3745-advipservicesk9-mz.124-25d.image
+        idlepc = 0x60a80f7c
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R24]]
+        model = 3745
+        console = 2124
+        aux = 2524
+        cnfg = configs\R24.cfg
+        f0/0 = R1 f1/4
+        symbol = computer
+        x = -683.747258045
+        y = 407.960461481
+        z = 1.0
+    [[ROUTER R23]]
+        model = 3745
+        console = 2123
+        aux = 2523
+        cnfg = configs\R23.cfg
+        f0/0 = R1 f1/3
+        symbol = computer
+        x = -810.61731573
+        y = 406.546247918
+        z = 1.0
+    [[ROUTER R22]]
+        model = 3745
+        console = 2122
+        aux = 2522
+        cnfg = configs\R22.cfg
+        f0/0 = R1 f1/2
+        symbol = computer
+        x = -934.658946291
+        y = 407.960461481
+        z = 1.0
+    [[ROUTER R21]]
+        model = 3745
+        console = 2121
+        aux = 2521
+        cnfg = configs\R21.cfg
+        f0/0 = R1 f1/1
+        symbol = computer
+        x = -1065.77164466
+        y = 407.960461481
+        z = 1.0
+        hx = 14.0
+        hy = -27.0
+[GNS3-DATA]
+    configs = configs
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "192.168.2.0/24"
+        x = -1110.3422792
+        y = 449.232106143
+    [[NOTE 2]]
+        text = "192.168.6.0/24"
+        x = 343.0
+        y = -12.5
+    [[NOTE 3]]
+        text = "192.168.4.0/24"
+        x = -815.994082814
+        y = 462.43311627
+    [[NOTE 4]]
+        text = "192.168.6.0/24"
+        x = -598.86623254
+        y = 456.616882454
+    [[NOTE 5]]
+        text = "192.168.1.0/24"
+        x = 413.412480459
+        y = 493.972221514
+    [[NOTE 6]]
+        text = "192.168.6.0/24"
+        x = 173.294372515
+        y = 460.859523141
+    [[NOTE 7]]
+        text = "192.168.2.0/24"
+        x = -280.198918086
+        y = 476.102163829
+    [[NOTE 8]]
+        text = "192.168.1.0/24"
+        x = -742.0
+        y = -30.5
+    [[NOTE 9]]
+        text = "192.168.4.0/24"
+        x = -140.0
+        y = 31.5
+    [[NOTE 10]]
+        text = "192.168.5.0/24"
+        x = -727.68751699
+        y = 442.048339959
+    [[NOTE 11]]
+        text = "192.168.3.0/24"
+        x = -963.597113195
+        y = 456.261543395
+    [[NOTE 12]]
+        text = "192.168.3.0/24"
+        x = -347.0
+        y = 22.5
+    [[NOTE 13]]
+        text = "192.168.5.0/24"
+        x = 77.0
+        y = 29.5
+    [[NOTE 14]]
+        text = "192.168.2.0/24"
+        x = -539.0
+        y = -1.5
+    [[NOTE 15]]
+        text = "192.168.4.0/24"
+        x = 773.581961293
+        y = 485.261543395
+    [[NOTE 16]]
+        text = "192.168.3.0/24"
+        x = 668.405337784
+        y = 513.031096017
+    [[NOTE 17]]
+        text = "192.168.2.0/24"
+        x = 569.743432901
+        y = 490.445309579
+    [[NOTE 18]]
+        text = "192.168.5.0/24"
+        x = 48.7157287525
+        y = 492.960028205
+    [[NOTE 19]]
+        text = "192.168.3.0/24"
+        x = -181.537013202
+        y = 498.687950266
+    [[NOTE 20]]
+        text = "192.168.1.0/24"
+        x = -436.529870527
+        y = 479.629075763
+    [[NOTE 21]]
+        text = "192.168.4.0/24"
+        x = -76.3603896932
+        y = 470.918397644
+    [[NOTE 22]]
+        text = "192.168.1.0/24"
+        x = -1266.67323164
+        y = 452.759018078
+    [[NOTE 23]]
+        text = "192.168.6.0/24"
+        x = 1023.2367235
+        y = 475.202668892
+    [[NOTE 24]]
+        text = "192.168.5.0/24"
+        x = 898.658079739
+        y = 507.303173955
+    [[NOTE 25]]
+        text = "f0/0"
+        x = 68.2952111583
+        y = 3.1785210653
+        interface = R20 f0/0
+    [[NOTE 26]]
+        text = "f0/0"
+        x = 62.7760935703
+        y = -4.70925404594
+        interface = R21 f0/0
+    [[NOTE 27]]
+        text = "f0/0"
+        x = 50.5608182651
+        y = -13.9390826519
+        interface = R22 f0/0
+    [[NOTE 28]]
+        text = "f0/0"
+        x = 28.8425289544
+        y = -17.7833562499
+        interface = R23 f0/0
+    [[NOTE 29]]
+        text = "f0/0"
+        x = 9.84898349564
+        y = -10.6194793768
+        interface = R24 f0/0
+    [[NOTE 30]]
+        text = "f0/0"
+        x = 49.2532547003
+        y = -14.5490316103
+        interface = R25 f0/0
+    [[NOTE 31]]
+        text = "f0/0"
+        x = 33.3771916547
+        y = -17.9982215412
+        interface = R26 f0/0
+    [[NOTE 32]]
+        text = "f0/0"
+        x = 16.5074170085
+        y = -14.4416616837
+        interface = R27 f0/0
+    [[NOTE 33]]
+        text = "f0/0"
+        x = 6.08209433791
+        y = -7.58760474873
+        interface = R28 f0/0
+    [[NOTE 34]]
+        text = "f0/0"
+        x = 2.0511206464
+        y = -3.34101155748
+        interface = R29 f0/0
+    [[NOTE 35]]
+        text = "f0/0"
+        x = -2.1285705798
+        y = 2.86930401109
+        interface = R9 f0/0
+    [[NOTE 36]]
+        text = "f0/0"
+        x = 2.53868003212
+        y = -3.92504553158
+        interface = R8 f0/0
+    [[NOTE 37]]
+        text = "f1/6"
+        x = -36.8095741877
+        y = -25.9042405795
+        interface = R3 f1/6
+    [[NOTE 38]]
+        text = "f1/5"
+        x = 64.8635823014
+        y = 23.3478055965
+        interface = R3 f1/5
+    [[NOTE 39]]
+        text = "f1/4"
+        x = 54.6552454226
+        y = 52.2960149467
+        interface = R3 f1/4
+    [[NOTE 40]]
+        text = "f1/1"
+        x = -50.8487101215
+        y = 46.6873343392
+        interface = R3 f1/1
+    [[NOTE 41]]
+        text = "f1/0"
+        x = -57.8633352212
+        y = 19.0784454888
+        interface = R3 f1/0
+    [[NOTE 42]]
+        text = "f1/3"
+        x = 15.9353978166
+        y = 66.2067076072
+        interface = R3 f1/3
+    [[NOTE 43]]
+        text = "f1/2"
+        x = -29.0152248994
+        y = 65.9208422219
+        interface = R3 f1/2
+    [[NOTE 44]]
+        text = "f1/4"
+        x = 61.9638472081
+        y = 48.1378572804
+        interface = R2 f1/4
+    [[NOTE 45]]
+        text = "f1/3"
+        x = 23.9613600712
+        y = 68.7804964485
+        interface = R2 f1/3
+    [[NOTE 46]]
+        text = "f1/2"
+        x = -20.8391324318
+        y = 68.0944156189
+        interface = R2 f1/2
+    [[NOTE 47]]
+        text = "f1/1"
+        x = -53.6857582259
+        y = 54.0386239702
+        interface = R2 f1/1
+    [[NOTE 48]]
+        text = "f1/6"
+        x = 33.9167290017
+        y = -33.80817395
+        interface = R2 f1/6
+    [[NOTE 49]]
+        text = "f1/5"
+        x = 67.317510502
+        y = 20.680563424
+        interface = R2 f1/5
+    [[NOTE 50]]
+        text = "f1/0"
+        x = -62.5590145325
+        y = 28.0681830367
+        interface = R2 f1/0
+    [[NOTE 51]]
+        text = "f1/5"
+        x = 68.8232480244
+        y = 42.1234971362
+        interface = R1 f1/5
+    [[NOTE 52]]
+        text = "f1/4"
+        x = 39.4586283489
+        y = 62.8369937981
+        interface = R1 f1/4
+    [[NOTE 53]]
+        text = "f1/3"
+        x = -6.4049747949
+        y = 68.5866571088
+        interface = R1 f1/3
+    [[NOTE 54]]
+        text = "f1/2"
+        x = -48.6293607601
+        y = 59.7926360425
+        interface = R1 f1/2
+    [[NOTE 55]]
+        text = "f1/1"
+        x = -64.7337233618
+        y = 38.1884387658
+        interface = R1 f1/1
+    [[NOTE 56]]
+        text = "f1/0"
+        x = -59.646239232
+        y = 8.38035343774
+        interface = R1 f1/0
+    [[NOTE 57]]
+        text = "f1/6"
+        x = 47.1806875051
+        y = -37.9094379194
+        interface = R1 f1/6
+    [[NOTE 58]]
+        text = "f0/0"
+        x = 14.7222261391
+        y = -13.5798114482
+        interface = R7 f0/0
+    [[NOTE 59]]
+        text = "f1/0"
+        x = 9.7840588386
+        y = 88.5599147515
+        interface = R6 f1/0
+    [[NOTE 60]]
+        text = "f0/1"
+        x = 8.05436706223
+        y = 51.8301806701
+        interface = R6 f0/1
+    [[NOTE 61]]
+        text = "f0/0"
+        x = 8.9969400529
+        y = 70.4277465429
+        interface = R6 f0/0
+    [[NOTE 62]]
+        text = "f2/0"
+        x = 82.1121624897
+        y = 43.794725902
+        interface = R5 f2/0
+    [[NOTE 63]]
+        text = "f1/0"
+        x = 87.5044808664
+        y = -13.7601782782
+        interface = R5 f1/0
+    [[NOTE 64]]
+        text = "f0/1"
+        x = 80.8111652097
+        y = 27.9170932257
+        interface = R5 f0/1
+    [[NOTE 65]]
+        text = "f0/0"
+        x = 81.9056565389
+        y = 8.9044796672
+        interface = R5 f0/0
+    [[NOTE 66]]
+        text = "f1/15"
+        x = 199.809574188
+        y = 97.4042405795
+        interface = R4 f1/15
+    [[NOTE 67]]
+        text = "f1/14"
+        x = -1.62078745568
+        y = 128.484057811
+        interface = R4 f1/14
+    [[NOTE 68]]
+        text = "f1/13"
+        x = -120.141888634
+        y = 93.0094199725
+        interface = R4 f1/13
+    [[NOTE 69]]
+        text = "f1/12"
+        x = 81.8524871873
+        y = -15.9919772345
+        interface = R4 f1/12
+    [[NOTE 70]]
+        text = "f1/11"
+        x = 74.6301547238
+        y = -68.4116824734
+        interface = R4 f1/11
+    [[NOTE 71]]
+        text = "f1/10"
+        x = -84.857920838
+        y = -27.2700893155
+        interface = R4 f1/10
+    [[NOTE 72]]
+        text = "f1/9"
+        x = -46.1800685552
+        y = -97.0333629353
+        interface = R4 f1/9
+    [[NOTE 73]]
+        text = "f1/8"
+        x = -71.1736367437
+        y = -48.8893166584
+        interface = R4 f1/8
+    [[NOTE 74]]
+        text = "f1/7"
+        x = 82.6280599471
+        y = -43.4277465429
+        interface = R4 f1/7
+    [[NOTE 75]]
+        text = "f1/6"
+        x = -56.1850937904
+        y = -71.2768460313
+        interface = R4 f1/6
+    [[NOTE 76]]
+        text = "f1/5"
+        x = 147.12857058
+        y = 28.1306959889
+        interface = R4 f1/5
+    [[NOTE 77]]
+        text = "f1/4"
+        x = 77.9613199679
+        y = 62.4250455316
+        interface = R4 f1/4
+    [[NOTE 78]]
+        text = "f1/3"
+        x = 34.7777738609
+        y = 64.0798114482
+        interface = R4 f1/3
+    [[NOTE 79]]
+        text = "f1/1"
+        x = -95.7792546266
+        y = 32.4819035874
+        interface = R4 f1/1
+    [[NOTE 80]]
+        text = "f1/0"
+        x = -109.050077027
+        y = 7.47193293984
+        interface = R4 f1/0
+    [[NOTE 81]]
+        text = "f1/2"
+        x = -67.6232411533
+        y = 55.0727421014
+        interface = R4 f1/2
+    [[NOTE 82]]
+        text = "f0/0"
+        x = 0.0213242628371
+        y = -0.636407546761
+        interface = R30 f0/0
+    [[NOTE 83]]
+        text = "f0/0"
+        x = 0.886417698594
+        y = -1.84780559655
+        interface = R19 f0/0
+    [[NOTE 84]]
+        text = "f0/0"
+        x = 6.59475457744
+        y = -8.04601494665
+        interface = R18 f0/0
+    [[NOTE 85]]
+        text = "f0/0"
+        x = 53.3487101215
+        y = -12.4373343392
+        interface = R11 f0/0
+    [[NOTE 86]]
+        text = "f0/0"
+        x = 63.1133352212
+        y = -4.32844548878
+        interface = R10 f0/0
+    [[NOTE 87]]
+        text = "f0/0"
+        x = 62.5292546266
+        y = -4.98190358738
+        interface = R13 f0/0
+    [[NOTE 88]]
+        text = "f0/0"
+        x = 67.8000770275
+        y = 2.27806706016
+        interface = R12 f0/0
+    [[NOTE 89]]
+        text = "f0/0"
+        x = 60.9549381316
+        y = -6.60981359705
+        interface = R15 f0/0
+    [[NOTE 90]]
+        text = "f0/0"
+        x = 48.6232411533
+        y = -14.8227421014
+        interface = R14 f0/0
+    [[NOTE 91]]
+        text = "f0/0"
+        x = 18.3146021834
+        y = -15.2067076072
+        interface = R17 f0/0
+    [[NOTE 92]]
+        text = "f0/0"
+        x = 35.5152248994
+        y = -17.9208422219
+        interface = R16 f0/0
